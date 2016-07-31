@@ -1,1 +1,0 @@
-1. used Spring Boot pom generator to initialize the maven project, added TestSpringBoot class

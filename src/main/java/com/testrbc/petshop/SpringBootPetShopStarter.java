@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class TestSpringBoot {
+public class SpringBootPetShopStarter {
     public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(TestSpringBoot.class, args);
+        ApplicationContext ctx = SpringApplication.run(SpringBootPetShopStarter.class, args);
 
         System.out.println("Let's inspect the beans provided by Spring Boot:");
 
