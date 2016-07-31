@@ -1,6 +1,6 @@
 package com.testrbc.petshop;
 
-import javafx.application.Application;
+import com.stormpath.sdk.application.Application;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
