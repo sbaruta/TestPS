@@ -1,5 +1,6 @@
 package com.testrbc.petshop.domain;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDateTime;
@@ -20,6 +21,7 @@ public class Pet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID", nullable = false, unique = true)
+    @ApiModelProperty(notes = "The Id of the pet", required = true)
     private String id;
 
     @Basic
