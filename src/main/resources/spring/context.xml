@@ -56,8 +56,6 @@
 
     <context:annotation-config/>
 
-    <!--<bean class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" />-->
-
     <context:property-placeholder location="classpath:/swagger.properties" />
 
 </beans>

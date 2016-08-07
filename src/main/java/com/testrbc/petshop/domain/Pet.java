@@ -1,11 +1,6 @@
 package com.testrbc.petshop.domain;
 
 import io.swagger.annotations.ApiModelProperty;
-import org.hibernate.annotations.Type;
-import org.joda.time.DateTime;
-import org.joda.time.LocalDateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -43,9 +38,8 @@ public class Pet {
     private String gender;
 
     @Basic
-    @Type(type = "org.joda.time.LocalDateTime")
     @Column(name = "BIRTH_DATE")
-    private LocalDateTime birthDate;
+    private String birthDate;
 
     @Basic
     @Column(name = "ADDRESS")
@@ -95,11 +89,11 @@ public class Pet {
         this.gender = gender;
     }
 
-    public LocalDateTime getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDateTime birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -127,8 +121,7 @@ public class Pet {
         tags.add(getGender());
         tags.add(getOwner());
         tags.add(getStatus());
-        tags.add(getBirthDate().toString(DateTimeFormat.forPattern("yyyy-MM-dd")));
-        tags.add(getBirthDate().toString(DateTimeFormat.forPattern("yyyy,MM,dd")));
+        tags.add(getBirthDate());
         return tags.toString();
     }
 }

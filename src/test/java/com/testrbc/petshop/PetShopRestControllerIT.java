@@ -24,7 +24,7 @@ import static org.junit.Assert.assertThat;
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @IntegrationTest({"server.port=0"})
-public class PetShopControllerIT {
+public class PetShopRestControllerIT {
     @Value("${local.server.port}")
     private int port;
 

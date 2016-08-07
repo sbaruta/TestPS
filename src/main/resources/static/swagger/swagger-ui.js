@@ -3447,6 +3447,7 @@ SwaggerClient.prototype.initialize = function (url, options) {
     }
   }
 
+//  window.authorizations.add("key", new ApiKeyAuthorization("Authorization", "WUGuXAQrC62G1gpBmNVZuYXbIsOHBhMgfqafr5rvk0U", "header"));
   options = options || {};
   this.clientAuthorizations.add(options.authorizations);
   this.swaggerRequestHeaders = options.swaggerRequestHeaders || 'application/json;charset=utf-8,*/*';

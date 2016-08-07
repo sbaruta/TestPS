@@ -21,12 +21,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = MockServletContext.class)
 @WebAppConfiguration
-public class PetShopControllerTest {
+public class PetShopRestControllerTest {
     private MockMvc mvc;
 
     @Before
     public void setUp() throws Exception {
-        mvc = MockMvcBuilders.standaloneSetup(new PetShopController()).build();
+        mvc = MockMvcBuilders.standaloneSetup(new PetShopRestController()).build();
     }
 
     @Test
